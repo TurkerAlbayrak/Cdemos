@@ -1,0 +1,8 @@
+command : gcc main.c -0 main 
+this command make main.exe
+
+command : gcc main.c -o main && ./main
+this command build and run
+
+command : gcc main.c led.c uart.c -0 main
+this command run multiple files
