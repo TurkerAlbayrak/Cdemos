@@ -1,26 +1,21 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <windows.h>
 
 int main(void) {
 
-	char command = 'a';
+	char *strRed = "Red";
+	char *strYellow = "Yellow";
+	char *strGreen = "Green";
+	int isInvalid = 1;
 
-	switch(command)
-	{
-		case 'L':
-			printf("open");
-			break;
-		
-		case 'F':
-			printf("fan open");
-			break;
-
-		case 'M':
-			printf("motor open");
-			break;
-		default:
-			printf("Undefined command");
-			break;		
+	while(isInvalid) {
+		printf("%s\n", strRed);
+		Sleep(10000);
+		printf("%s\n", strYellow);
+		Sleep(2000);
+		printf("%s\n", strGreen);
+		Sleep(5000);
 	}
 
 	return 0;
